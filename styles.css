@@ -1,4 +1,42 @@
-.read {
-  background-color: blue;
-  color: red;
+/* Initial */
+
+li {
+    list-style-type: none;
 }
+
+/* Additional Classes */
+
+.read {
+    background-color: #EA2E49;
+    color: #6E1522;
+    opacity: .5;
+}
+
+/* SECTION 1 */
+
+.input-section {
+    display: flex;
+    border: 1px dashed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* SECTION 2 */
+
+.bookmark-section {
+    display: flex;
+    border: 1px dashed;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* New Article */
+
+article {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: #77C4D3;
+}
+.new-bookmark-title {}
