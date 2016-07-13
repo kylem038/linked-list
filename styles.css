@@ -1,5 +1,9 @@
 /* Initial */
 
+body {
+    background-color: #18232F;
+    font-family: 'Oxygen', sans-serif;
+}
 li {
     list-style-type: none;
 }
@@ -19,7 +23,7 @@ li {
     border: 1px dashed;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
 }
 
 /* SECTION 2 */
@@ -35,8 +39,32 @@ li {
 
 article {
     display: inline-block;
-    height: 200px;
-    width: 200px;
-    background-color: #77C4D3;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #5C7E70;
+    word-wrap: break-word;
 }
-.new-bookmark-title {}
+.new-bookmark-title {
+    display: block;
+    font-size: 1.5em;
+    color: #F3D0BA;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.new-bookmark-url {
+    margin-bottom: 10px;
+}
+.read-bookmark, .remove-bookmark {
+    padding: 5px;
+    border: 3px solid #2F4740;
+    color: #2F4740;
+    background-color: transparent;
+    font-size: .8em;
+    margin: 3px;
+    display: inline-block;
+    width: 68px;
+}
