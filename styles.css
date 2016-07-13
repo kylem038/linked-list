@@ -3,9 +3,23 @@
 body {
     background-color: #18232F;
     font-family: 'Oxygen', sans-serif;
+    color: white;
 }
 li {
     list-style-type: none;
+}
+h1 {
+    margin-bottom: 15px;
+}
+h2 {
+    font-style: italic;
+}
+input {
+    margin-bottom: 15px;
+    d
+}
+.submit-button {
+    margin-bottom: 5%;
 }
 
 /* Additional Classes */
@@ -20,17 +34,17 @@ li {
 
 .input-section {
     display: flex;
-    border: 1px dashed;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 50vh;
+    background-color: #494E5E;
 }
 
 /* SECTION 2 */
 
 .bookmark-section {
     display: flex;
-    border: 1px dashed;
     flex-wrap: wrap;
     justify-content: center;
 }
