@@ -45,7 +45,6 @@ $('#add-new-article').on('click', '#mark-remove', function() {
 });
 
 // Enable Submit Button
-
 function $toggleSubmitButton() {
   if ($('#input-title').val() === '' || $('#input-url').val() === '') {
     $inputSubmitButton.prop('disabled', true);
@@ -55,13 +54,14 @@ function $toggleSubmitButton() {
   }
 }
 $(document).ready($toggleSubmitButton);
-
 $inputNewTitle.on('keyup', $toggleSubmitButton);
 $inputNewUrl.on('keyup', $toggleSubmitButton);
 
-// $('#mark-read').on('click', function () {
-//   var $countRead = $('.read').length
-//   $('#bookmark-read-count').text('Total Read Bookmarks: ' + $countRead);
-// });
-
-// count .read classes on the page
+// Clear Read Class
+$('#clear-read').on('click', function () {
+  $('.read').remove();
+  var $downCount = $('article').length
+  var $downCountRead = $('.read').length
+  $('#bookmark-count').text('Total Bookmarks: ' + $downCount);
+  $('#bookmark-read-count').text('Total Read Bookmarks: ' + $downCountRead);
+});
