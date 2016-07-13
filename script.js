@@ -10,7 +10,7 @@ var $inputNewTitleValue = $inputNewTitle.val()
 var $inputNewUrlValue = $inputNewUrl.val()
 // Output Variables
 var $outputNewTitle = $('#insert-bookmark-title')
-var $outputNewUrl = $('#insert-bookmark-title')
+var $outputNewUrl = $('#insert-bookmark-url')
 var $newArticle = $('#add-new-article')
 
 
