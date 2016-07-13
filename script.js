@@ -36,4 +36,20 @@ $('#add-new-article').on('click', '#mark-read', function() {
 // Remove Button
 $('#add-new-article').on('click', '#mark-remove', function() {
     $(this).parent().remove();
+    var $downcount = $('article').length
+    $('#bookmark-count').text('Total Bookmarks: ' + $downcount);
 });
+
+// Enable Submit Button
+
+function $toggleSubmitButton() {
+  if ($('#input-title').val() === '')  {
+    $inputSubmitButton.prop('disabled', true);
+  }
+  if  ($('#input-title').val().length > 0)  {
+    $inputSubmitButton.prop('disabled', false);
+  }
+}
+$(document).ready($toggleSubmitButton);
+
+$inputNewTitle.on('keyup', $toggleSubmitButton);
