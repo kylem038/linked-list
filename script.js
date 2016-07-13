@@ -31,25 +31,37 @@ $inputSubmitButton.on('click', function() {
 // Read Button
 $('#add-new-article').on('click', '#mark-read', function() {
     $(this).parent().toggleClass('read');
+    var $countRead = $('.read').length
+    $('#bookmark-read-count').text('Total Read Bookmarks: ' + $countRead);
 }); // You cannot target the mark-read button because it doesn't exist when the page loads. I instead toggled the parent that did exist and selected #mark-read from within. The only when to find it again is to use the $(this)
 
 // Remove Button
 $('#add-new-article').on('click', '#mark-remove', function() {
     $(this).parent().remove();
-    var $downcount = $('article').length
-    $('#bookmark-count').text('Total Bookmarks: ' + $downcount);
+    var $downCount = $('article').length
+    var $downCountRead = $('.read').length
+    $('#bookmark-count').text('Total Bookmarks: ' + $downCount);
+    $('#bookmark-read-count').text('Total Read Bookmarks: ' + $downCountRead);
 });
 
 // Enable Submit Button
 
 function $toggleSubmitButton() {
-  if ($('#input-title').val() === '')  {
+  if ($('#input-title').val() === '' || $('#input-url').val() === '') {
     $inputSubmitButton.prop('disabled', true);
   }
-  if  ($('#input-title').val().length > 0)  {
+  if  ($('#input-title').val().length > 0 || $('#input-url').val().length > 0) {
     $inputSubmitButton.prop('disabled', false);
   }
 }
 $(document).ready($toggleSubmitButton);
 
 $inputNewTitle.on('keyup', $toggleSubmitButton);
+$inputNewUrl.on('keyup', $toggleSubmitButton);
+
+// $('#mark-read').on('click', function () {
+//   var $countRead = $('.read').length
+//   $('#bookmark-read-count').text('Total Read Bookmarks: ' + $countRead);
+// });
+
+// count .read classes on the page
