@@ -1,0 +1,69 @@
+/* Initial */
+body {
+  font-family: 'Oxygen', sans-serif;
+  color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-style: italic;
+}
+
+input {
+  margin-bottom: 15px; d
+}
+
+.submit-button {
+  margin-bottom: 5%;
+}
+
+/* Additional Classes */
+
+.read {
+    background-color: #EA2E49;
+    color: #6E1522;
+    opacity: .5;
+}
+
+/* SECTION 1 */
+
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #494E5E;
+}
+
+/* SECTION 2 */
+
+.bookmark-section {
+    display: flex;
+    border: 1px dashed;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* New Article */
+
+article {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: #77C4D3;
+}
+.new-bookmark-title {}
+
+  @media (max-width) {
+
+  }
