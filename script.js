@@ -21,7 +21,7 @@ $inputSubmitButton.on('click', function() {
         $inputNewTitle.val() + // input from the user
         '</li>' +
         '<li id="insert-bookmark-url" class="new-bookmark-url">' +
-        '<a href=' + $inputNewUrl.val() + '>' + $inputNewUrl.val() + '</a>' + //input from the user
+        '<a href=' + $inputNewUrl.val() +  'target="_blank">' + $inputNewUrl.val() + '</a>' + //input from the user
         '</li>' +
         '<button id="mark-read" class="read-bookmark" type="button" name="button">Read</button>' +
         '<button id="mark-remove" class="remove-bookmark" type="button" name="button">Remove</button></article>');
