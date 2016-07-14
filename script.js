@@ -24,8 +24,18 @@ function bookmarkTemplate(newUrl, newTitle) {
     '</article>';
 }
 
+//
+function urlNotValid() {
+  return $inputNewUrl.val() <= 0;
+}
+//
+function urlValid(newUrl) {
+  var regexp = /(http|ftp|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
+  return regexp.test(newUrl);
+}
 // Submit Function
 $inputSubmitButton.on('click', function() {
+  if (!urlValid($inputNewUrl.val())) { return alert('Must enter a valid URL') };
   linkCount++;
   updateBookmarkCount();
   var bookmarkHTML = bookmarkTemplate($inputNewUrl.val(), $inputNewTitle.val());
