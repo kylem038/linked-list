@@ -16,10 +16,21 @@ h2 {
 }
 input {
     margin-bottom: 15px;
-    d
 }
+
+button {
+  padding: 5px;
+  font-size: .8em;
+  margin: 3px;
+  display: inline-block;
+}
+
 .submit-button {
     margin-bottom: 5%;
+}
+
+.clear-read-button {
+  margin: 15px;
 }
 
 /* Additional Classes */
@@ -68,6 +79,9 @@ article {
     color: #F3D0BA;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.bookmark-title-link {
+  text-decoration: none;
 }
 .new-bookmark-url {
     margin-bottom: 10px;
